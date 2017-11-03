@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="referrer" content="never">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="less/order.css">
+</head>
+<body ontouchstart>
+<header>
+    <div class="city-title">
+        <i class="fa fa-angle-left fa-color"></i>
+        <span>我的订单</span>
+    </div>
+</header>
+<section>
+    <div class="weui-tab">
+        <div class="weui-navbar">
+            <a class="weui-navbar__item weui-bar__item_on" >
+                待乘车
+            </a>
+            <a class="weui-navbar__item">
+                待支付
+            </a>
+            <a class="weui-navbar__item">
+                全部订单
+            </a>
+        </div>
+
+        <div class="weui-tab__panel">
+            <!--//1.如果没有订单-->
+            <div class="button-sp-area" style="display: none">
+                <span>你还没有相关的订单</span>
+                <span>快去下单吧</span>
+                <br/>
+                <a href="javascript:;" class="weui-btn weui-btn_plain-primary">前往预定</a>
+            </div>
+            <!--2.如果有订单-->
+
+            <div class="weui-tab__bd-item" style="display: block">
+                <div class="page preview js_show">
+
+                    <div class="page__bd">
+                        <div class="weui-form-preview">
+                            <div class="weui-form-preview__hd">
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">090-回龙观-腾讯-回龙观大街</label>
+                                    <em class="weui-form-preview__value">已支付</em>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <span class="setFont">09:04</span>10-09
+                                        <span class="setColor">早</span><span class="setColor1">日次</span><span class="setColor2"></span></label>
+                                </div>
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <div class="setStart"><span class="span">起</span></div>回龙观地铁站</label>
+                                    <span class="weui-form-preview__value">¥2400.00</span>
+                                </div>
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <div class="setStart1"><span class="span">终</span></div>回龙观地铁站</label>
+                                    <span class="weui-form-preview__value"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="weui-form-preview">
+                            <div class="weui-form-preview__hd">
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">090-回龙观-腾讯-回龙观大街</label>
+                                    <em class="weui-form-preview__value">已支付</em>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <span class="setFont">09:04</span>10-09
+                                        <span class="setColor">早</span><span class="setColor1">日次</span><span class="setColor2"></span></label>
+                                </div>
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <div class="setStart"><span class="span">起</span></div>回龙观地铁站</label>
+                                    <span class="weui-form-preview__value">¥2400.00</span>
+                                </div>
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <div class="setStart1"><span class="span">终</span></div>回龙观地铁站</label>
+                                    <span class="weui-form-preview__value"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="weui-tab__bd-item hide">
+                待支付
+            </div>
+            <div class="weui-tab__bd-item hide">
+                <div class="page preview js_show">
+
+                    <div class="page__bd">
+                        <div class="weui-form-preview">
+                            <div class="weui-form-preview__hd">
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">090-回龙观-腾讯-回龙观大街</label>
+                                    <em class="weui-form-preview__value">已退款</em>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <span class="setFont">09:04</span>10-09
+                                        <span class="setColor">早</span><span class="setColor1">日次</span><span class="setColor2"></span></label>
+                                </div>
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <div class="setStart"><span class="span">起</span></div>回龙观地铁站</label>
+                                    <span class="weui-form-preview__value">¥2400.00</span>
+                                </div>
+                                <div class="weui-form-preview__item">
+                                    <label class="weui-form-preview__label">
+                                        <div class="setStart1"><span class="span">终</span></div>回龙观地铁站</label>
+                                    <span class="weui-form-preview__value"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<script src="js/zepto.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.weui-navbar__item').on('click', function () {
+            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on')
+            console.log(this);
+            //操作内容切换
+            var index = $(this).index();
+            $('.weui-tab__panel .weui-tab__bd-item').eq(index).show().siblings().hide();
+        });
+    });
+</script>
+</body>
+</html>

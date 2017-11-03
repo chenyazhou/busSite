@@ -1,0 +1,71 @@
+@import url(../../../submod/libcom/css/base.css);
+body,
+html {
+  background: #efeff4;
+  max-width: 640px;
+}
+header {
+  background: url(../img/succ-title.png) center center;
+  width: 256px;
+  height: 53px;
+  margin: 10% auto 10%;
+}
+center span {
+  font-size: 32px;
+  margin: 10px auto;
+  display: inline-block;
+  color: #222222;
+}
+center img {
+  width: 388px;
+  height: 52px;
+  margin: 10px auto;
+  display: block;
+}
+section {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+}
+section img {
+  width: 205px;
+  height: 205px;
+}
+section div {
+  font-size: 28px;
+  margin: -10px auto 5%;
+  color: #666666;
+}
+section button {
+  height: 70px;
+  line-height: 70px;
+  background: #8199f6;
+  border-radius: 50px;
+  width: 80%;
+  font-size: 30px;
+  color: #ffffff;
+  border: none;
+}
+footer {
+  position: relative;
+  margin-top: 40%;
+}
+footer div {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+footer span {
+  font-size: 22px;
+  color: #999999;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+footer span:last-child {
+  font-size: 28px;
+  color: #666666;
+}

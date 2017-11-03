@@ -1,0 +1,142 @@
+@import url(base.css);
+
+section{
+    height: 100%;
+}
+
+.fa-color{
+    color:#fff;
+}
+.city-title {
+    background-color: #0bb20c;
+    width:100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+.city-title i{
+    position: absolute;
+    left:30px;
+    font-size: 24px;
+    line-height: 60px;
+}
+
+.city-title span {
+    display: inline;
+    color: #fff;
+}
+
+.weui-tab__panel .weui-tab__bd-item {
+    display: none;
+    height: 100%;
+    overflow: auto;
+}
+
+.weui-tab__panel .weui-tab__bd-item--active {
+    display: block;
+}
+.weui-navbar__item{
+    background-color:#fff;
+}
+.weui-navbar__item.weui-bar__item_on{
+    background-color:#fff;
+    color:#0bb20c;
+}
+.weui-form-preview__hd .weui-form-preview__value {
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.button-sp-area {
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 50%;
+}
+.button-sp-area span {
+    width:100%;
+    display: block;
+    text-align: center;
+    color: rgba(56, 54, 54, .5);
+}
+.button-sp-area .weui-btn {
+    width:120px !important;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    overflow: hidden;
+}
+span.setFont {
+    font-size: 16px;
+    color: #656464;
+    margin-right: 10px;
+}
+span.setColor {
+    margin: 0 5px;
+    color: #fff;
+    background-color: #7bd67c;
+    border-radius: 5px;
+    padding: 2px;
+}
+span.setColor1 {
+    background-color: #fb9527;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+span.setColor2 {
+    background-color: #fb9527;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    position: relative;
+    left: -1px;
+    border-left: 1px dashed #fff;
+}
+
+.setStart {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #3fd84a;
+    color: #fff;
+    display: inline-block;
+    line-height: 25px;
+    text-align: center;
+    margin-right:10px;
+}
+.setStart span {
+     position: relative;
+     text-align: center;
+     left: 5px;
+ }
+.setStart1{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e96280;
+    color: #fff;
+    display: inline-block;
+    line-height: 25px;
+    text-align: center;
+    margin-right:10px;
+}
+.setStart1 span {
+    position: relative;
+    text-align: center;
+    left: 5px;
+}
+
+

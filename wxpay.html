@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	title>微信支付</title>
+<link rel="stylesheet" href="/css/weui.css"/>
+<link rel="stylesheet" href="/css/example.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	var data = '${data}';
+	window.onload = function(){
+		var json = JSON.parse(data);
+		console.log(json.appId);
+		if(json.callbackUrl != undefined && json.callbackUrl != ''){
+			$("#callbackUrl").attr("src",json.callbackUrl);
+		}
+		function onBridgeReady(){
+			   WeixinJSBridge.invoke(
+			       'getBrandWCPayRequest', {
+			           "appId" : json.appId,              //公众号名称，由商户传入     
+			           "timeStamp":json.timeStamp,         //时间戳，自1970年以来的秒数     
+			           "nonceStr" : json.nonceStr,         //随机串     
+			           "package" : json.packages,     
+			           "signType" : json.signType,         //微信签名方式:     
+			           "paySign" : json.paySign            //微信签名 
+			       },
+			       function(res){     
+			           if(res.err_msg == "get_brand_wcpay_request:ok" ) {
+			        	    $("#message").show();
+			        		$("#state").attr("class","weui_icon_msg weui_icon_success");
+			        		$("#title").text("操作成功");
+			           }else{
+			        	    $("#message").show();
+			        		$("#state").attr("class","weui_icon_msg weui_icon_warn");
+			        		$("#title").text("支付失败");
+			        		$("#msg").text(res.err_msg );
+			           }
+			       }
+			   ); 
+			}
+			if (typeof WeixinJSBridge == "undefined"){
+			   if( document.addEventListener ){
+			       document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+			   }else if (document.attachEvent){
+			       document.attachEvent('WeixinJSBridgeReady', onBridgeReady); 
+			       document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+			   }
+			}else{
+			   onBridgeReady();
+			}
+	}
+</script>
+</head>
+<body>
+	<div id="message" class="weui_msg" style="display: none;">
+	    <div class="weui_icon_area">
+	    	<i id="state"></i>
+	    </div>
+	    <div class="weui_text_area">
+	        <h2 class="weui_msg_title" id="title"></h2>
+	        <p class="weui_msg_desc" id="msg"></p>
+	    </div>
+	    <div class="weui_extra_area">
+	        <a id="callbackUrl" href="javascript:void(0)">返回商户</a>
+	    </div>
+	</div>
+	<span id="data" style="display: none;"></span>
+</body>
+</html>
